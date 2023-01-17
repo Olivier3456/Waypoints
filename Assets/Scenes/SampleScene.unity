@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514757989}
   - component: {fileID: 514757988}
+  - component: {fileID: 514757990}
   m_Layer: 0
   m_Name: Waypoint6
   m_TagString: Untagged
@@ -153,6 +154,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gizmosRadius: 0.33
+  changeScale: 0
+  factor: 0
+  speed: 1
 --- !u!4 &514757989
 Transform:
   m_ObjectHideFlags: 0
@@ -168,6 +172,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &514757990
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514757987}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.33
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &630001510
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,6 +195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 630001512}
   - component: {fileID: 630001511}
+  - component: {fileID: 630001513}
   m_Layer: 0
   m_Name: Waypoint8
   m_TagString: Untagged
@@ -198,6 +216,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gizmosRadius: 0.33
+  changeScale: 0
+  factor: 0
+  speed: 1
 --- !u!4 &630001512
 Transform:
   m_ObjectHideFlags: 0
@@ -213,6 +234,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &630001513
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630001510}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.33
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,6 +351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 904689906}
   - component: {fileID: 904689905}
+  - component: {fileID: 904689907}
   m_Layer: 0
   m_Name: Waypoint4
   m_TagString: Untagged
@@ -337,6 +372,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gizmosRadius: 0.33
+  changeScale: 0
+  factor: 0
+  speed: 1
 --- !u!4 &904689906
 Transform:
   m_ObjectHideFlags: 0
@@ -352,6 +390,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &904689907
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904689904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.33
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1392828860}
   - component: {fileID: 1392828861}
+  - component: {fileID: 1392828862}
   m_Layer: 0
   m_Name: Waypoint1
   m_TagString: Untagged
@@ -481,6 +533,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gizmosRadius: 0.33
+  changeScale: 0
+  factor: 2
+  speed: 1
+--- !u!135 &1392828862
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392828858}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.33
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1587953057
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,6 +559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1587953059}
   - component: {fileID: 1587953060}
+  - component: {fileID: 1587953061}
   m_Layer: 0
   m_Name: Waypoint3
   m_TagString: Untagged
@@ -526,6 +595,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gizmosRadius: 0.33
+  changeScale: 0
+  factor: 0
+  speed: 1
+--- !u!135 &1587953061
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587953057}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.33
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1681968236
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +621,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1681968238}
   - component: {fileID: 1681968239}
+  - component: {fileID: 1681968240}
   m_Layer: 0
   m_Name: Waypoint2
   m_TagString: Untagged
@@ -571,6 +657,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gizmosRadius: 0.33
+  changeScale: 1
+  factor: 2
+  speed: 100
+--- !u!135 &1681968240
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681968236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.33
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1889370644
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2027404981}
   - component: {fileID: 2027404980}
+  - component: {fileID: 2027404982}
   m_Layer: 0
   m_Name: Waypoint5
   m_TagString: Untagged
@@ -722,6 +825,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gizmosRadius: 0.33
+  changeScale: 1
+  factor: 0.5
+  speed: 100
 --- !u!4 &2027404981
 Transform:
   m_ObjectHideFlags: 0
@@ -737,6 +843,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &2027404982
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027404979}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.33
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2033563169
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +988,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2045112599}
   - component: {fileID: 2045112598}
+  - component: {fileID: 2045112600}
   m_Layer: 0
   m_Name: Waypoint7
   m_TagString: Untagged
@@ -889,6 +1009,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gizmosRadius: 0.33
+  changeScale: 1
+  factor: 1
+  speed: 100
 --- !u!4 &2045112599
 Transform:
   m_ObjectHideFlags: 0
@@ -904,3 +1027,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &2045112600
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045112597}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.33
+  m_Center: {x: 0, y: 0, z: 0}
