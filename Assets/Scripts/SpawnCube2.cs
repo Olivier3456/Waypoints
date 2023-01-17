@@ -32,7 +32,7 @@ public class SpawnCube2 : MonoBehaviour
     {
         if (cube != null && actualWaypoint < waypoints.Length)
         {
-            if (!movementStarted)
+            if (!movementStarted)       // Calcule la distance uniquement au début du mouvement.
             {
                 distance = Vector3.Distance(waypoints[actualWaypoint].position, cube.transform.position);
                 movementStarted = true;
@@ -41,7 +41,7 @@ public class SpawnCube2 : MonoBehaviour
             cube.transform.position += (waypoints[actualWaypoint].position - cube.transform.position).normalized
                                        * Time.deltaTime * distance / timeBetweenSteps;
 
-            if (Vector3.Distance(waypoints[actualWaypoint].position, cube.transform.position) <= 0.01f)
+            if (Vector3.Distance(waypoints[actualWaypoint].position, cube.transform.position) <= 0.01f) // Si le cube est arrivé au waypoint...
             {
                 actualWaypoint++;
                 movementStarted = false;
