@@ -10,12 +10,23 @@ public class SpawnCube2 : MonoBehaviour
 
     [SerializeField] private float timeBetweenSteps;
 
-    private int steps = 0;
-
     private GameObject cube;
     private bool movementStarted;
     private float distance;
     private int actualWaypoint = 0;
+
+    private bool canSpawnCube = true;
+
+
+    private void OnMouseDown()
+    {
+        if (canSpawnCube)
+        {
+            canSpawnCube = false;
+            cube = Instantiate(cubeToSpawn, transform.position, Quaternion.identity);
+        }
+    }
+
 
     private void Update()
     {
@@ -35,31 +46,13 @@ public class SpawnCube2 : MonoBehaviour
                 actualWaypoint++;
                 movementStarted = false;
 
-                if (actualWaypoint == waypoints.Length) Destroy(cube);
+                if (actualWaypoint == waypoints.Length)
+                {
+                    Destroy(cube);
+                    canSpawnCube = true;
+                    actualWaypoint = 0;
+                }
             }
         }
-
-
-
-
     }
-
-
-
-
-    private void OnMouseDown()
-    {
-        if (steps == 0)
-        {
-            cube = Instantiate(cubeToSpawn, transform.position, Quaternion.identity);
-            steps++;
-        }
-    }
-
-
-
-
-
-
-
 }
