@@ -14,14 +14,15 @@ public class SpawnCube : MonoBehaviour
 
     private GameObject cube;
 
-
+    private bool canSpawnCube = true;
 
     private void OnMouseDown()
     {
-        if (steps == 0)
+        if (canSpawnCube)
         {
+            canSpawnCube = false;
             cube = Instantiate(cubeToSpawn, waypoints[0].position, Quaternion.identity);
-            steps++;
+            
             StartCoroutine(MoveCube());
         }
     }
@@ -30,18 +31,18 @@ public class SpawnCube : MonoBehaviour
     private IEnumerator MoveCube()
     {
         yield return new WaitForSeconds(poseTime);
+        steps++;
 
-        cube.transform.position = waypoints[1].position;
-
-        yield return new WaitForSeconds(poseTime);
-
-        cube.transform.position = waypoints[2].position;
-
-        yield return new WaitForSeconds(poseTime);
-
-        steps = 0;
-        Destroy(cube);
+        if (steps < waypoints.Length)
+        {
+            cube.transform.position = waypoints[steps].position;
+            StartCoroutine(MoveCube());
+        }
+        else
+        {
+            Destroy(cube);
+            steps = -1;
+            canSpawnCube = true;
+        }
     }
-
-
 }
